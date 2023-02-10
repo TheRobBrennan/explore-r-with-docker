@@ -6,11 +6,17 @@ services:
     image: rocker/rstudio:latest-daily
     container_name: rstudio
     environment:
-      - DISABLE_AUTH=true # Enabling DISABLE_AUTH will bypass any need to authenticate and login to RStudio
+      # Enabling DISABLE_AUTH will bypass any need to authenticate and login to RStudio
+      - DISABLE_AUTH=true
+
+      # Username and password for Posit RStudio
       - USER=rstudio
       - PASSWORD=rstudio
+
+      # OPTIONAL: Specify a timezone for this Docker container
       - TZ=America/Los_Angeles
     ports:
       - 8787:8787
     volumes:
+      # Mount our repo examples folder to Posit RStudio and for use by other tools like Radian in our container
       - ./examples:/home/rstudio/examples/
