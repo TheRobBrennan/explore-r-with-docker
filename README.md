@@ -32,3 +32,11 @@ Highlights include:
   - [Posit RStudio Server](https://posit.co/products/open-source/rstudio-server/) - RStudio Server enables you to provide a browser-based interface to a version of [R](https://www.r-project.org) running on a remote Linux server, bringing the power and productivity of the [Posit RStudio IDE](https://posit.co/products/open-source/rstudio/) to server-based deployments of [R](https://www.r-project.org).
   - [Posit RStudio IDE](https://posit.co/products/open-source/rstudio/) - [Posit RStudio IDE](https://posit.co/products/open-source/rstudio/) is an integrated development environment (IDE) for [R](https://www.r-project.org) and [Python](https://www.python.org). It includes a console, syntax-highlighting editor that supports direct code execution, and tools for plotting, history, debugging, and workspace management. [Posit RStudio IDE](https://posit.co/products/open-source/rstudio/) is available in open-source and commercial editions and runs on the desktop (Windows, Mac, and Linux).
 - [Radian](https://github.com/randy3k/radian) - _radian_ is an alternative console for the [R](https://www.r-project.org) programming language with multiline editing and rich syntax highlight. One would consider radian as a [ipython](https://github.com/ipython/ipython) clone for [R](https://www.r-project.org), though its design is more aligned to [julia](https://julialang.org).
+
+## Installation
+
+There are several paths available for working with this containerized solution:
+
+- [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers) using VS Code
+- Using the [Docker in Visual Studio Code](https://code.visualstudio.com/docs/containers/overview) extension to run [Docker compose](https://code.visualstudio.com/docs/containers/overview#_docker-compose) for building and running a development container
+- Using the [docker compose CLI](https://docs.docker.com/compose/reference/) to manually build and manage services in [Docker](https://www.docker.com) containers
