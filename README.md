@@ -57,13 +57,13 @@ Once you open this project in [VS Code](https://code.visualstudio.com), you may 
 
 If you select `Reopen in Container`, the [Visual Studio Code Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension will build a development container that will run within your [Docker](https://www.docker.com) environment as specified by [.devcontainer/devcontainer.json](.devcontainer/devcontainer.json) and [docker/rstudio/docker-compose.yml](docker/rstudio/docker-compose.yml).
 
-This process will take a few minutes when you first pull, build, and create your development container. Subsequent runs will use the already built container and be much faster to load and jump into coding. 🤓
+When you first pull, build, and create your development container, this process will take a few minutes. Subsequent runs will use the already-built container and be much faster to load and jump into coding. 🤓
 
-##### What's REALLY happening?
+##### What's happening?
 
-Depending on your development environment, it's possible you may already be using a variety of [Docker](https://www.docker.com) containers, images, volumes, and more. 
+Depending on your development environment, you may already be using a variety of [Docker](https://www.docker.com) containers, images, volumes, and more. 
 
-However, if you're starting from a clean slate, let's take a look at [Docker Desktop](https://www.docker.com/products/docker-desktop) for macOS. You may see a Dashboard that is similar to the following:
+However, if you're starting from a clean slate, let's look at [Docker Desktop](https://www.docker.com/products/docker-desktop) for macOS. You may see a Dashboard that is similar to the following:
 
 ![documentation/assets/docker-desktop-macos-containers-empty.png](documentation/assets/docker-desktop-macos-containers-empty.png)
 ![documentation/assets/docker-desktop-macos-images-empty.png](documentation/assets/docker-desktop-macos-images-empty.png)
@@ -73,3 +73,17 @@ Let's select `Reopen in Container` for our project to build the development cont
 
 ![documentation/assets/vscode-reopen-in-container.png](documentation/assets/vscode-reopen-in-container.png)
 
+Feel free to click the link to view the log as this container is built.
+
+![documentation/assets/vscode-extension-dev-containers-reading-dev-container-configuration.png](documentation/assets/vscode-extension-dev-containers-reading-dev-container-configuration.png)
+
+VS Code will reload with the Dev Container that was just created.
+
+![documentation/assets/vscode-devcontainer-examples.png](documentation/assets/vscode-devcontainer-examples.png)
+
+Note the following from the above image:
+
+- The upper left Explorer view shows the contents of all folders and files underneath the `examples` folder from our project.
+  - If you open a Terminal session within the container, you will see these files exist at the `/home/rstudio/examples/` path - and they can be updated from within the container OR from within the local folder
+- The bottom left shows that we have successfully connected to our `Dev Container`
+- The bottom right shows a pane running a custom [examples/scripts/setup.sh](examples/scripts/setup.sh) script that automatically executes when our container is initially built. This script can be modified to install additional libraries into our development container.
