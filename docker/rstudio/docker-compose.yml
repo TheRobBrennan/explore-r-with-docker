@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  rstudio:
+    # Shoutout to Rich Pauloo for helping unblock me trying to get Posit RStudio to run on Apple Silicon - https://www.richpauloo.com/post/docker-rstudio/
+    image: rocker/rstudio:latest-daily
+    container_name: explore-r-with-docker
+    environment:
+      # Enabling DISABLE_AUTH will bypass any need to authenticate and login to RStudio
+      - DISABLE_AUTH=true
+
+      # Username and password for Posit RStudio
+      - USER=rstudio
+      - PASSWORD=rstudio
+
+      # OPTIONAL: Specify a timezone for this Docker container
+      - TZ=America/Los_Angeles
+    ports:
+      - 8787:8787
+    volumes:
+      # Mount our repo examples folder to Posit RStudio and for use by other tools like Radian in our container
+      - ./examples:/home/rstudio/examples/
