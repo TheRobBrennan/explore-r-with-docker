@@ -119,3 +119,11 @@ If you choose to create a new `Bash` terminal you will see the following:
 This will launch a `bash` shell for you to explore your dev container from the command line:
 
 ![documentation/assets/vscode-devcontainer-terminal-bash-shell.png](documentation/assets/vscode-devcontainer-terminal-bash-shell.png)
+
+Within the `bash` shell, you can also do things like:
+
+- Launch `radian` for developing and executing R code
+![documentation/assets/vscode-devcontainer-terminal-bash-shell-radian.png](documentation/assets/vscode-devcontainer-terminal-bash-shell-radian.png)
+
+- Run `rstudio-server` commands
+![documentation/assets/vscode-devcontainer-terminal-bash-shell-rstudio-server-cli.png](documentation/assets/vscode-devcontainer-terminal-bash-shell-rstudio-server-cli.png)
