@@ -59,6 +59,10 @@ If you select `Reopen in Container`, the [Visual Studio Code Dev Containers](htt
 
 When you first pull, build, and create your development container, this process will take a few minutes. Subsequent runs will use the already-built container and be much faster to load and jump into coding. 🤓
 
+You should be able to browse to [http://localhost:8787](http://localhost:8787) to connect to Posit RStudio Server and use the web-based IDE:
+
+![documentation/assets/vscode-devcontainer-rstudio-server-web.png](documentation/assets/vscode-devcontainer-rstudio-server-web.png)
+
 ##### What's happening?
 
 Depending on your development environment, you may already be using a variety of [Docker](https://www.docker.com) containers, images, volumes, and more. 
