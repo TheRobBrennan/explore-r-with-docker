@@ -46,3 +46,30 @@ There are several paths available for working with this containerized solution:
 If you are a fan of using [VS Code](https://code.visualstudio.com), you will notice this project includes recommended extensions to be installed if they haven't already been installed by you previously.
 
 #### Developing inside a Container
+
+To get started, make sure you have the [Visual Studio Code Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension installed.
+
+![documentation/assets/vscode-extension-dev-containers.png](documentation/assets/vscode-extension-dev-containers.png)
+
+Once you open this project in [VS Code](https://code.visualstudio.com), you may notice the following in the bottom right of your screen:
+
+![documentation/assets/vscode-reopen-in-container.png](documentation/assets/vscode-reopen-in-container.png)
+
+If you select `Reopen in Container`, the [Visual Studio Code Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension will build a development container that will run within your [Docker](https://www.docker.com) environment as specified by [.devcontainer/devcontainer.json](.devcontainer/devcontainer.json) and [docker/rstudio/docker-compose.yml](docker/rstudio/docker-compose.yml).
+
+This process will take a few minutes when you first pull, build, and create your development container. Subsequent runs will use the already built container and be much faster to load and jump into coding. 🤓
+
+##### What's REALLY happening?
+
+Depending on your development environment, it's possible you may already be using a variety of [Docker](https://www.docker.com) containers, images, volumes, and more. 
+
+However, if you're starting from a clean slate, let's take a look at [Docker Desktop](https://www.docker.com/products/docker-desktop) for macOS. You may see a Dashboard that is similar to the following:
+
+![documentation/assets/docker-desktop-macos-containers-empty.png](documentation/assets/docker-desktop-macos-containers-empty.png)
+![documentation/assets/docker-desktop-macos-images-empty.png](documentation/assets/docker-desktop-macos-images-empty.png)
+![documentation/assets/docker-desktop-macos-volumes-empty.png](documentation/assets/docker-desktop-macos-volumes-empty.png)
+
+Let's select `Reopen in Container` for our project to build the development container we will use for this project:
+
+![documentation/assets/vscode-reopen-in-container.png](documentation/assets/vscode-reopen-in-container.png)
+
