@@ -93,3 +93,19 @@ If we take a look back at [Docker Desktop](https://www.docker.com/products/docke
 ![documentation/assets/docker-desktop-macos-containers.png](documentation/assets/docker-desktop-macos-containers.png)
 ![documentation/assets/docker-desktop-macos-images.png](documentation/assets/docker-desktop-macos-images.png)
 ![documentation/assets/docker-desktop-macos-volumes.png](documentation/assets/docker-desktop-macos-volumes.png)
+
+##### VS Code Terminal
+
+While you are working within a Dev Container in VS Code, you will have a terminal with several options available:
+
+![documentation/assets/vscode-devcontainer-terminal.png](documentation/assets/vscode-devcontainer-terminal.png)
+
+###### R Terminal
+
+If you choose to create a new `R Terminal` you will see the following:
+
+![documentation/assets/vscode-devcontainer-terminal-r-terminal.png](documentation/assets/vscode-devcontainer-terminal-r-terminal.png)
+
+This will launch an `R Interactive` console for you to run R commands:
+
+![documentation/assets/vscode-devcontainer-terminal-r-terminal-R-Interactive.png](documentation/assets/vscode-devcontainer-terminal-r-terminal-R-Interactive.png)
