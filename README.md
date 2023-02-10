@@ -109,3 +109,13 @@ If you choose to create a new `R Terminal` you will see the following:
 This will launch an `R Interactive` console for you to run R commands:
 
 ![documentation/assets/vscode-devcontainer-terminal-r-terminal-R-Interactive.png](documentation/assets/vscode-devcontainer-terminal-r-terminal-R-Interactive.png)
+
+###### bash
+
+If you choose to create a new `Bash` terminal you will see the following:
+
+![documentation/assets/vscode-devcontainer-terminal-bash.png](documentation/assets/vscode-devcontainer-terminal-bash.png)
+
+This will launch a `bash` shell for you to explore your dev container from the command line:
+
+![documentation/assets/vscode-devcontainer-terminal-bash-shell.png](documentation/assets/vscode-devcontainer-terminal-bash-shell.png)
