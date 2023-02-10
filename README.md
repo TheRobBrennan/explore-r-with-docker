@@ -123,7 +123,9 @@ This will launch a `bash` shell for you to explore your dev container from the c
 Within the `bash` shell, you can also do things like:
 
 - Launch `radian` for developing and executing R code
+
 ![documentation/assets/vscode-devcontainer-terminal-bash-shell-radian.png](documentation/assets/vscode-devcontainer-terminal-bash-shell-radian.png)
 
 - Run `rstudio-server` commands
+
 ![documentation/assets/vscode-devcontainer-terminal-bash-shell-rstudio-server-cli.png](documentation/assets/vscode-devcontainer-terminal-bash-shell-rstudio-server-cli.png)
