@@ -37,6 +37,12 @@ Highlights include:
 
 There are several paths available for working with this containerized solution:
 
-- [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers) using VS Code
+- [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers) using [VS Code](https://code.visualstudio.com)
 - Using the [Docker in Visual Studio Code](https://code.visualstudio.com/docs/containers/overview) extension to run [Docker compose](https://code.visualstudio.com/docs/containers/overview#_docker-compose) for building and running a development container
 - Using the [docker compose CLI](https://docs.docker.com/compose/reference/) to manually build and manage services in [Docker](https://www.docker.com) containers
+
+### VS Code
+
+If you are a fan of using [VS Code](https://code.visualstudio.com), you will notice this project includes recommended extensions to be installed if they haven't already been installed by you previously.
+
+#### Developing inside a Container
