@@ -1,5 +1,5 @@
 {
-	"name": "Posit RStudio (rocker/rstudio)",
+	"name": "Explore R with Docker - Posit RStudio and Radian",
 	"dockerComposeFile": "${localWorkspaceFolder}/docker/rstudio/docker-compose.yml",
 	"service": "rstudio",
 	"mounts": [

@@ -4,7 +4,7 @@ services:
   rstudio:
     # Shoutout to Rich Pauloo for helping unblock me trying to get Posit RStudio to run on Apple Silicon - https://www.richpauloo.com/post/docker-rstudio/
     image: rocker/rstudio:latest-daily
-    container_name: rstudio
+    container_name: explore-r-with-docker
     environment:
       # Enabling DISABLE_AUTH will bypass any need to authenticate and login to RStudio
       - DISABLE_AUTH=true
