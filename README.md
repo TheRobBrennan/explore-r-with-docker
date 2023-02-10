@@ -87,3 +87,9 @@ Note the following from the above image:
   - If you open a Terminal session within the container, you will see these files exist at the `/home/rstudio/examples/` path - and they can be updated from within the container OR from within the local folder
 - The bottom left shows that we have successfully connected to our `Dev Container`
 - The bottom right shows a pane running a custom [examples/scripts/setup.sh](examples/scripts/setup.sh) script that automatically executes when our container is initially built. This script can be modified to install additional libraries into our development container.
+
+If we take a look back at [Docker Desktop](https://www.docker.com/products/docker-desktop) for macOS, we now see that we have the following in our Dashboard:
+
+![documentation/assets/docker-desktop-macos-containers.png](documentation/assets/docker-desktop-macos-containers.png)
+![documentation/assets/docker-desktop-macos-images.png](documentation/assets/docker-desktop-macos-images.png)
+![documentation/assets/docker-desktop-macos-volumes.png](documentation/assets/docker-desktop-macos-volumes.png)
